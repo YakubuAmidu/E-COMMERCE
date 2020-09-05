@@ -88,5 +88,13 @@ const ProductWrapper = styled.div`
     font-size: 1.4rem;
     border-radius: 0.5rem 0 0 0;
     transform: translate(100%, 100%);
+    transition: all 1s linear;
+  }
+  .img-container:hover .cart-btn {
+    transform: translate(0, 0);
+  }
+  .cart-btn:hover {
+    color: var(--mainBlue);
+    cursor: pointer;
   }
 `;

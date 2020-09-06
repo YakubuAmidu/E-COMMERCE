@@ -9,6 +9,7 @@ class ProductProvider extends Component {
   state = {
     products: [],
     detailProduct: detailProduct,
+    cart: [],
   };
 
   componentDidMount() {
@@ -46,6 +47,9 @@ class ProductProvider extends Component {
     product.count = 1;
     const price = product.price;
     product.total = price;
+    this.setState(() => {
+      return { products: tempProducts };
+    });
   };
 
   render() {

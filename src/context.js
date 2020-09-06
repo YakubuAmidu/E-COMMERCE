@@ -87,7 +87,7 @@ class ProductProvider extends Component {
     console.log('Item removed');
   };
 
-  clearItem = (id) => {
+  clearCart = (id) => {
     console.log('Cart was cleared');
   };
 
@@ -103,7 +103,7 @@ class ProductProvider extends Component {
           increment: this.increment,
           decrement: this.decrement,
           removeItem: this.removeItem,
-          clearItem: this.clearItem,
+          clearCart: this.clearCart,
         }}
       >
         {this.props.children}

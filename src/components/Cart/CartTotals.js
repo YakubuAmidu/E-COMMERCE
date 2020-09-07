@@ -21,6 +21,14 @@ export default function CartTotals({ value }) {
               <span className='text-title'>subTotal :</span>
               <strong>$ {cartSubTotal}</strong>
             </h5>
+            <h5>
+              <span className='text-title'>tax :</span>
+              <strong>$ {cartTax}</strong>
+            </h5>
+            <h5>
+              <span className='text-title'>total :</span>
+              <strong>$ {cartTotals}</strong>
+            </h5>
           </div>
         </div>
       </div>
